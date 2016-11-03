@@ -1,0 +1,10 @@
+{
+  "name": "js-stack-from-scratch_tutorial",
+  "version": "1.0.0",
+  "description": "A tutorial of JavaScript Stack from Scratch",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  }
+}
