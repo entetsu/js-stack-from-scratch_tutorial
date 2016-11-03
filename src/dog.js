@@ -8,4 +8,5 @@ class Dog {
   }
 }
 
-module.exports = Dog;
+//module.exports = Dog;
+export default Dog;
