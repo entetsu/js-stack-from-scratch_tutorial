@@ -17,6 +17,7 @@ const paths = {
   webpackFile: 'webpack.config.babel.js',
   libDir: 'lib',
   distDir: 'dist',
+  clientBundle: 'dist/client-bundle.js?(.map)',
 };
 
 gulp.task('lint', () =>
@@ -31,7 +32,10 @@ gulp.task('lint', () =>
 );
 
 gulp.task('clean', () =>
-  del(paths.libDir)
+  del(
+    paths.libDir,
+    paths.clientBundle,
+  )
 );
 
 gulp.task('build', ['lint', 'clean'], () =>
