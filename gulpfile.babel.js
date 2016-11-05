@@ -10,7 +10,9 @@ import eslint from 'gulp-eslint';
 const paths = {
   allSrcJs: 'src/**/*.js',
   gulpFile: 'gulpfile.babel.js',
+  webpackFile: 'webpack.config.babel.js',
   libDir: 'lib',
+  distDir: 'dist',
 };
 
 gulp.task('lint', () =>
