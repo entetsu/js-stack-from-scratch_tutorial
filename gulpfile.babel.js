@@ -34,7 +34,7 @@ gulp.task('build', ['lint', 'clean'], () =>
 );
 
 gulp.task('main', ['build'], (callback) => {
-  exec(`node ${paths.libDir}`, (error, stdout) => {
+  exec(`node ${paths.libDir}/server`, (error, stdout) => {
     console.log(stdout);
     return callback(error);
   });
